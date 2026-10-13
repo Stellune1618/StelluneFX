@@ -7,11 +7,13 @@
   "author": {
     "name": "Stellune"
   },
+  "license": "MIT",
   "keywords": [
     "unity",
     "shader",
     "particle",
     "built-in-render-pipeline",
     "vrchat"
-  ]
+  ],
+  "dependencies": {}
 }
