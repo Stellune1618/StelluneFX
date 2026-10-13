@@ -2,10 +2,11 @@
   "name": "com.stellune1618.stellunefx",
   "displayName": "StelluneFX",
   "version": "0.0.1-alpha.1",
-  "description": "Particle shaders for Unity Built-in Render Pipeline.",
+  "description": "Particle shaders for Unity Built-in Render Pipeline and VRChat.",
   "unity": "2022.3",
   "author": {
-    "name": "Stellune"
+    "name": "Stellune",
+    "url": "https://github.com/Stellune1618/StelluneFX"
   },
   "license": "MIT",
   "keywords": [
