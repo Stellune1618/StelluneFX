@@ -80,7 +80,6 @@ Shader "StelluneFX/Built-in/Particle Distortion"
 
                 float2 screenUV = i.screenPos.xy / i.screenPos.w;
                 half2 offset = (tex2D(_DistortionMap, i.uv + _Time.y * _DistortionScroll.xy).rg * 2 - 1) * _DistortionStrength;
-                half3 scene = tex2D(_StelluneFXGrabTexture, screenUV).rgb;
                 half3 distorted = tex2D(_StelluneFXGrabTexture, screenUV + offset).rgb;
                 half3 tinted = distorted * _TintColor.rgb;
                 half3 effect = lerp(distorted, tinted, _Blend);
