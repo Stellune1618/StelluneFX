@@ -2,6 +2,11 @@ name: Build Release
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "Packages/com.stellune1618.stellunefx/**"
+      - ".github/workflows/release.yml"
 
 jobs:
   build:
@@ -54,3 +59,4 @@ jobs:
             ${{ env.unityPackage }}
             ${{ env.packagePath }}/package.json
           tag_name: ${{ env.version }}
+
